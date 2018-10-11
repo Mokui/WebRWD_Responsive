@@ -1,0 +1,105 @@
+.map{
+    padding:0;
+}
+
+#mapid { height: 40em; }
+
+.logo{
+    font-size: 3em;
+    margin-right: 1%;
+}
+
+.spacer{
+    display:block;
+    width:100%;
+    margin-bottom: 2%;
+}
+
+.labeler{
+    margin: 1%;
+}
+
+.ligne{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    max-width: 100%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1200px){
+    .btn-radio{
+        font-size: 80%;
+    }
+    .btn-radio:last-child{
+        margin-top: 1%;
+    }
+    .column {
+        flex: 50%;
+        max-width: 100%;
+    }
+    .column img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+    .column {
+        flex: 50%;
+        max-width: 80%;
+    }
+    .btn-radio{
+        font-size: 100%;
+        margin-bottom: 1% !important;
+    }
+    .btn-radio:last-child{
+        margin-top: auto;
+    }
+    nav i{
+        font-size: 50%;
+    }
+    .logo{
+        font-size: 2em;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+    
+    .filters{
+        display: none;
+    }
+    .logo{
+        font-size: 1em;
+    }
+    .searchbar{
+        display: none;
+    }
+    .column {
+        flex: 50%;
+        max-width: 100%;
+    }
+    .column img {
+        width: 250px;
+        height: 250px;
+    }
+}
